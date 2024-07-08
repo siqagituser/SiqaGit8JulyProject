@@ -7,3 +7,66 @@ packages:
   gitUrl: https://github.com/siqagituser/SiqaGit8JulyProject
   gitUsername: siqagituser
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
+services:
+- serviceName: project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SiqaGit8JulyProject
+    version: "1.0"
+- serviceName: project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SiqaGit8JulyProject
+    version: "1.0"
+- serviceName: project.siqagit8july.integrations:SIQAAdapterFlow
+  packages:
+  - name: SiqaGit8JulyProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "5000"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "5000"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : SIQACloud
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : vmiboint01
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : sa
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SiqaGit8JulyProject.project.siqagit8july.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "20"
